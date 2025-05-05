@@ -1,19 +1,21 @@
 <script setup lang="ts"></script>
 
 <template>
-    <nav class="w-full h-20 flex justify-between items-center fixed top-2">
-        <div class="flex gap-2 items-center">
-            <img src="/influenz-logo.png">
+    <nav class="w-full h-16 flex justify-between items-center">
+        <div class="flex gap-2 items-center h-full">
+            <img src="/influenz-logo.png" class="hidden lg:block h-2/3 w-auto ">
+            <img src="/small-influenz-logo.svg" class="block lg:hidden h-2/3 w-auto ">
             <h1>Admin Panel</h1>
         </div>
-        <div class="flex gap-4">
+        <div class="hidden lg:flex gap-4 h-full items-center">
             <a>Disputes</a>
-            <div class="flex">
-                <div class="p-2 w-40 rounded-l-lg bg-gray-300"></div>
-                <div class="p-2 w-40 rounded-r-lg bg-secondary"></div>
+            <div class="flex items-center h-full">
+                <div class="w-40 h-2/3 rounded-l-lg bg-gray-300 flex items-center justify-center text-black"><p>0x00000000</p></div>
+                <div class="w-40 h-2/3 rounded-r-lg bg-secondary flex items-center justify-center"><p>4.2034 ETH</p></div>
             </div>
-            <img>
+            <img class="border h-12 w-12 rounded-lg">
         </div>
+        <img class="border h-12 w-12 rounded-lg block lg:hidden"
     </nav>
 </template>
 

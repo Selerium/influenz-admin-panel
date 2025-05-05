@@ -4,7 +4,7 @@
   --color-background: #230124;
   --color-primary: #2e002f;
   --color-secondary: #541438;
-  --color-accent: #ed47e3;
+  --color-accent: #ff8fde;
 }
 
 :root {
@@ -20,4 +20,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hover-scale {
+  transition: all 150ms, border 0ms;
+  cursor: pointer;
+}
+
+.hover-scale:hover {
+  font-weight: bold;
+  background-color: var(--color-secondary);
+  border: solid 1px;
+  border-color: var(--color-accent);
 }
