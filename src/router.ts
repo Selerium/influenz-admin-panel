@@ -1,8 +1,9 @@
 import { createWebHistory, createRouter } from "vue-router"
 
 const routes = [
-    {path: '/login', component: () => import('./views/Login.vue')},
-    {path: '/', component: () => import('./views/Home.vue')}
+    {name: 'login', path: '/login', component: () => import('./views/Login.vue')},
+    {name: 'disputes', path: '/disputes', component: () => import('./views/DisputeManager.vue')},
+    {name: 'dispute-id', path: '/disputes/:id', component: () => import('./views/Dispute.vue')},
 ]
 
 const router = createRouter({

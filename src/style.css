@@ -5,6 +5,18 @@
   --color-primary: #2e002f;
   --color-secondary: #541438;
   --color-accent: #ff8fde;
+  --color-valid: #386338;
+  --color-invalid: #ce2939;
+
+  --color-tab-date: #eab0b0;
+  --color-tab-money: #3d6338;
+}
+
+#app {
+  width: 100dvw;
+  height: 100dvh;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
 }
 
 :root {
@@ -32,4 +44,14 @@
   background-color: var(--color-secondary);
   border: solid 1px;
   border-color: var(--color-accent);
+}
+
+button {
+  transition: all 150ms;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--color-accent);
+  font-weight: bold;
 }
