@@ -47,23 +47,23 @@ let list = [
       </h2>
     </div>
     <div class="w-full h-[1px] bg-gray-300"></div>
-    <div class="flex flex-col gap-4 w-full h-[92%] overflow-y-auto">
+    <div class="flex flex-col gap-4 w-full h-[90%] overflow-y-auto">
       <div v-for="record in list" class="flex gap-4 w-full h-fit">
-        <h2 class="p-4 m-0 box-border line-clamp-1 h-10 w-2/12 text-center">
+        <p class="p-4 m-0 font-light box-border line-clamp-1 h-10 w-2/12 text-center">
           {{ record.ID }}
-        </h2>
+        </p>
         <div class="h-full w-[1px]"></div>
-        <h2 class="p-4 m-0 box-border line-clamp-1 h-10 w-3/12 text-center">
+        <p class="p-4 m-0 font-light box-border line-clamp-1 h-10 w-3/12 text-center">
           {{ record.actor }}
-        </h2>
+        </p>
         <div class="h-full w-[1px]"></div>
-        <h2 class="p-4 m-0 box-border h-fit w-4/12 text-center">
+        <p class="p-4 m-0 font-light box-border h-fit w-4/12 text-center">
           {{ record.details }}
-        </h2>
+        </p>
         <div class="h-full w-[1px]"></div>
-        <h2 class="p-4 m-0 box-border h-fit w-3/12 text-center">
+        <p class="p-4 m-0 font-light box-border h-fit w-3/12 text-center">
           {{ record.date }}
-        </h2>
+        </p>
       </div>
     </div>
   </div>

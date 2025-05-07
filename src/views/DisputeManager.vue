@@ -184,7 +184,7 @@ let list = [
       class="h-full w-full box-border rounded-lg bg-primary overflow-x-auto overflow-y-hidden relative"
     >
       <div class="p-4 w-full min-w-7xl flex justify-between items-center">
-        <h1 class="m-0 font-bold">Dispute Manager</h1>
+        <h1 class="m-0 font-bold text-3xl">Dispute Manager</h1>
         <input
           class="w-72 p-2 rounded-lg border-black border-2 bg-white text-black"
           type="text"
@@ -194,13 +194,13 @@ let list = [
       <div
         class="font-bold flex items-center gap-2 w-full min-w-7xl px-4 border-y border-gray-300 h-16 bg-secondary overflow-y-visible"
       >
-        <div class="w-[4%] flex justify-center items-center gap-2">
+        <div class="w-[4%] flex justify-center items-start gap-2">
           <h2>ID</h2>
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
         <h2 class="w-[12%] text-center">Task Title</h2>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Brand</h2>
           <img @click="filterTab == 0 ? filterTab = -1 : filterTab = 0" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 0" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -209,13 +209,13 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Influencer</h2>
           <img @click="filterTab == 1 ? filterTab = -1 : filterTab = 1" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 1" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -224,14 +224,14 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
           
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Campaign Name</h2>
           <img @click="filterTab == 2 ? filterTab = -1 : filterTab = 2" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 2" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -240,14 +240,14 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
           
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Initiator</h2>
           <img @click="filterTab == 3 ? filterTab = -1 : filterTab = 3" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 3" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -256,14 +256,14 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
           
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Status</h2>
           <img @click="filterTab == 4 ? filterTab = -1 : filterTab = 4" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 4" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -272,14 +272,14 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
           
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Admin</h2>
           <img @click="filterTab == 5 ? filterTab = -1 : filterTab = 5" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 5" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
@@ -288,23 +288,23 @@ let list = [
             <div class="flex flex-col gap-2 p-4 overflow-y-auto">
               <div class="flex gap-2">
                 <input type="checkbox">
-                <label>Option 1</label>
+                <label class="font-normal">Option 1</label>
               </div>
             </div>
           </div>
           
         </div>
         <div class="h-full w-[1px] bg-gray-300"></div>
-        <div class="w-[12%] flex justify-center items-center gap-2 relative">
+        <div class="w-[12%] flex justify-center items-start gap-2 relative">
           <h2>Date</h2>
           <img @click="filterTab == 6 ? filterTab = -1 : filterTab = 6" src="/filter.svg" class="w-5 h-5 cursor-pointer"/>
           <div v-if="filterTab == 6" class="absolute flex flex-col w-50 h-72 rounded-lg border border-gray-300 bg-tertiary mt-4 top-full left-0 z-50">
             <h3 class="p-4">Filter By:</h3>
             <div class="w-full h-[1px] bg-gray-300"></div>
             <div class="flex flex-col gap-2 p-4">
-              <label>Start Date</label>
+              <label class="font-normal">Start Date</label>
               <input class="text-black bg-white scheme-light rounded-lg p-2 font-normal" type="date">
-              <label>End Date</label>
+              <label class="font-normal">End Date</label>
               <input class="text-black bg-white scheme-light rounded-lg p-2 font-normal" type="date">
             </div>
           </div>

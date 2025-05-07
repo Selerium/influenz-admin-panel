@@ -17,7 +17,7 @@ function submitLoginForm() {
     <div class="w-full h-full flex justify-center items-center">
         <div class="flex flex-col rounded-lg p-8 justify-center items-center gap-8 min-h-fit lg:min-h-96 min-w-2xs w-1/4 lg:h-3/5 border-accent border-2">
             <img src="/influenz-logo.png"/>
-            <h1>Admin Panel</h1>
+            <h1 class="font-bold">Admin Panel</h1>
             <form @submit.prevent="submitLoginForm" id="loginForm" class="flex flex-col items-center gap-4 w-full">
                 <div class="flex flex-col items-start w-full">
                     <label class="w-full p-2">Username</label>

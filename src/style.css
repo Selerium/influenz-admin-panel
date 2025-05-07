@@ -1,3 +1,4 @@
+@import url('/fonts/leagueSpartan.css');
 @import "tailwindcss";
 
 @theme {
@@ -20,10 +21,15 @@
   padding: 1rem 2rem;
 }
 
+* {
+  font-family: "League Spartan";
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 18px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 1);

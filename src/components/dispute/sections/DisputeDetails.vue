@@ -4,7 +4,7 @@
   <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Initiator</h2>
     <input
-      class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
+      class="py-2 px-4 bg-gray-300 font-light text-black h-14 w-full rounded-lg"
       disabled
       value="Initiator Name"
     />
@@ -12,7 +12,7 @@
   <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Task ID/Name</h2>
     <input
-      class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
+      class="py-2 px-4 bg-gray-300 font-light text-black h-14 w-full rounded-lg"
       disabled
       value="ID / Name"
     />
@@ -20,7 +20,7 @@
   <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Type</h2>
     <input
-      class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
+      class="py-2 px-4 bg-gray-300 font-light text-black h-14 w-full rounded-lg"
       disabled
       value="Selected Option"
     />
@@ -28,7 +28,7 @@
   <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Date Submitted</h2>
     <input
-      class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
+      class="py-2 px-4 bg-gray-300 font-light text-black h-14 w-full rounded-lg"
       disabled
       value="xx/xx/xxxx"
     />
@@ -44,7 +44,7 @@
   <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Contact Email</h2>
     <input
-      class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
+      class="py-2 px-4 bg-gray-300 font-light text-black h-14 w-full rounded-lg"
       disabled
       value="example@example.com"
     />
@@ -63,4 +63,5 @@
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

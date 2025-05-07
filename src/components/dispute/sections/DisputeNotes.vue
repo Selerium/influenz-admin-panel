@@ -57,22 +57,22 @@ let list = [
     <div class="w-full min-w-2xl lg:min-w-0 h-[1px] bg-gray-300"></div>
     <div class="flex min-w-2xl lg:min-w-0 flex-col gap-4 w-full h-[72%] overflow-y-auto py-4">
       <div v-for="record in list" class="flex items-center gap-4 w-full h-fit">
-        <h2 class="m-0 box-border line-clamp-1 h-6 w-3/12 text-center">
+        <p class="m-0 font-light box-border line-clamp-1 h-6 w-3/12 text-center">
           {{ record.admin }}
-        </h2>
+        </p>
         <div class="h-full w-[1px]"></div>
-        <h2 class="m-0 box-border h-fit w-6/12 text-left">
+        <p class="m-0 font-light box-border h-fit w-6/12 text-left">
           {{ record.message }}
-        </h2>
+        </p>
         <div class="h-full w-[1px]"></div>
-        <h2 class="m-0 box-border h-fit w-3/12 text-center">
+        <p class="m-0 font-light box-border h-fit w-3/12 text-center">
           {{ record.date }}
-        </h2>
+        </p>
       </div>
     </div>
     <div class="w-full min-w-2xl lg:min-w-0 h-[1px] bg-gray-300"></div>
     <div class="sticky left-0 w-full lg:min-w-0 h-[20%] p-4">
-        <textarea class="bg-white text-black w-full px-4 py-2 h-full rounded-lg"></textarea>
+        <textarea class="bg-white text-black font-light w-full px-4 py-2 h-full rounded-lg"></textarea>
         <button class="absolute right-6 bottom-6 bg-primary p-2 rounded-lg">Send</button>
     </div>
   </div>
