@@ -344,12 +344,14 @@ let list = [
           <div class="h-full w-[1px]"></div>
           <h2 class="w-[12%] text-center line-clamp-1">{{ record.date }}</h2>
         </div>
+        <div v-if="list.length == 0" class="w-full h-full flex flex-col gap-4 justify-center items-center">
+          <img src="/empty.png" class="w-40 h-auto">
+          <h2>No Disputes To Show!</h2>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.grid {
-}
 </style>

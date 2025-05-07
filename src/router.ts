@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router"
 
 const routes = [
-    {name: 'login', path: '/login', component: () => import('./views/Login.vue')},
+    {name: 'login', path: '/', component: () => import('./views/Login.vue')},
     {name: 'disputes', path: '/disputes', component: () => import('./views/DisputeManager.vue')},
     {name: 'dispute-id', path: '/disputes/:id', component: () => import('./views/Dispute.vue')},
 ]

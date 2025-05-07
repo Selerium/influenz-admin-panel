@@ -28,8 +28,8 @@ let list = [
 </script>
 
 <template>
-  <div class="w-full h-full bg-primary rounded-lg">
-    <div class="flex gap-4 h-[8%]">
+  <div class="w-full min-w-2xl lg:min-w-0 h-fit lg:h-full bg-primary rounded-lg overflow-x-auto">
+    <div class="flex gap-4 h-fit lg:h-[8%]">
       <h2 class="font-bold p-4 m-0 box-border text-ellipsis w-2/12 text-center">
         ID
       </h2>
@@ -57,11 +57,11 @@ let list = [
           {{ record.actor }}
         </h2>
         <div class="h-full w-[1px]"></div>
-        <h2 class="p-4 m-0 box-border line-clamp-1 h-10 w-4/12 text-center">
+        <h2 class="p-4 m-0 box-border h-fit w-4/12 text-center">
           {{ record.details }}
         </h2>
         <div class="h-full w-[1px]"></div>
-        <h2 class="p-4 m-0 box-border line-clamp-1 h-10 w-3/12 text-center">
+        <h2 class="p-4 m-0 box-border h-fit w-3/12 text-center">
           {{ record.date }}
         </h2>
       </div>

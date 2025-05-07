@@ -1,14 +1,14 @@
 <script setup lang='ts'></script>
  
-<template><div class="flex flex-col w-1/2 h-full rounded-lg bg-primary">
+<template><div class="flex flex-col w-1/2 h-[90dvh] lg:h-full rounded-lg bg-primary">
     <!-- task header -->
     <div class="flex justify-between items-center p-4">
       <div class="flex flex-col gap-4">
-        <div class="flex gap-4">
+        <div class="flex flex-col lg:flex-row gap-4">
           <h1>Task Title</h1>
           <h4>campaign name | brand name</h4>
         </div>
-        <div class="flex gap-4 items-center">
+        <div class="flex flex-col lg:flex-row gap-4 items-start lg:items-center">
           <div
             class="flex gap-2 px-2 py-1 text-black items-center bg-tab-date rounded-lg"
           >
@@ -47,7 +47,7 @@
     </div>
     <div class="w-full h-[1px] bg-gray-300"></div>
     <!-- attachments -->
-    <div class="flex h-1/3">
+    <div class="flex flex-col lg:flex-row h-fit lg:h-1/3">
         <!-- employee attachments -->
         <div class="flex flex-col grow p-4 gap-4">
             <h2 class="font-bold">Employee Attachments</h2>

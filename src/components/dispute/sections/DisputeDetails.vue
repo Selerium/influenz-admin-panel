@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Initiator</h2>
     <input
       class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
@@ -9,7 +9,7 @@
       value="Initiator Name"
     />
   </div>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Task ID/Name</h2>
     <input
       class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
@@ -17,7 +17,7 @@
       value="ID / Name"
     />
   </div>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Dispute Type</h2>
     <input
       class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
@@ -25,7 +25,7 @@
       value="Selected Option"
     />
   </div>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Date Submitted</h2>
     <input
       class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
@@ -41,7 +41,7 @@
       value="Selected Option"
     />
   </div>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Contact Email</h2>
     <input
       class="py-2 px-4 bg-gray-300 text-black h-14 w-full rounded-lg"
@@ -49,7 +49,7 @@
       value="example@example.com"
     />
   </div>
-  <div class="flex flex-col gap-2 grow min-w-72 h-fit">
+  <div class="flex flex-col gap-2 grow w-full lg:w-1/3 lg:min-w-72 h-fit">
     <h2 class="font-bold">Attachment For Dispute</h2>
     <div
       class="flex justify-between items-center bg-primary rounded-lg h-14 w-full py-2 px-4 gap-4"

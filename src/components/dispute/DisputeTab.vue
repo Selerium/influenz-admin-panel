@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Details from "./sections/Details.vue";
-import ActivityLog from "./sections/Log.vue";
-import Chat from "./sections/Chat.vue";
-import Notes from "./sections/Notes.vue";
+import Details from "./sections/DisputeDetails.vue";
+import ActivityLog from "./sections/DisputeLog.vue";
+import Chat from "./sections/DisputeChat.vue";
+import Notes from "./sections/DisputeNotes.vue";
 
-const chosenValue = ref<number>(0);
+const chosenValue = ref<any>(0);
 </script>
 
 <template>
-  <div class="flex flex-col w-1/2 h-full box-border">
+  <div class="flex flex-col w-1/2 h-[90dvh] lg:h-full box-border">
     <div class="flex w-full">
       <!-- selection for bigger screens -->
       <button
@@ -41,7 +41,7 @@ const chosenValue = ref<number>(0);
         Admin Notes
       </button>
       <!-- selection for smaller screens -->
-      <select @change="chosenValue = $event.target ? $event.target.value : chosenValue" class="w-full rounded-t-lg py-2 font-bold bg-secondary text-center lg:hidden">
+      <select @change="chosenValue = $event.target ? ($event.target as HTMLInputElement).value : chosenValue" class="w-full rounded-t-lg py-2 font-bold bg-secondary text-center lg:hidden">
         <option class="py-2 bg-primary" value="0">Dispute Details</option>
         <option class="py-2 bg-primary" value="1">Activity Log</option>
         <option class="py-2 bg-primary" value="2">Chat History</option>
