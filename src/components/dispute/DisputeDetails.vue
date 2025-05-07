@@ -11,6 +11,7 @@ const chosenValue = ref<number>(0);
 <template>
   <div class="flex flex-col w-1/2 h-full box-border">
     <div class="flex w-full">
+      <!-- selection for bigger screens -->
       <button
         @click="chosenValue = 0"
         :class="chosenValue == 0 ? 'bg-secondary' : 'bg-primary'"
@@ -39,6 +40,7 @@ const chosenValue = ref<number>(0);
       >
         Admin Notes
       </button>
+      <!-- selection for smaller screens -->
       <select @change="chosenValue = $event.target ? $event.target.value : chosenValue" class="w-full rounded-t-lg py-2 font-bold bg-secondary text-center lg:hidden">
         <option class="py-2 bg-primary" value="0">Dispute Details</option>
         <option class="py-2 bg-primary" value="1">Activity Log</option>

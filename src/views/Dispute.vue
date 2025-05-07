@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import TaskDetails from "../components/dispute/TaskDetails.vue";
 import DisputeDetails from "../components/dispute/DisputeDetails.vue";
 
 let route = useRoute();
+let router = useRouter();
+
 const disputeId = route.params.id;
 </script>
 
@@ -13,6 +15,7 @@ const disputeId = route.params.id;
     <div class="flex w-full justify-between h-[5%]">
       <button
         class="pointer py-2 w-52 rounded-lg border border-secondary bg-secondary"
+        @click="router.go(-1)"
       >
         Back
       </button>

@@ -13,7 +13,9 @@
       </div>
       <div class="hidden lg:flex gap-4 h-full items-center">
         <a>Disputes</a>
-        <div class="flex items-center h-full">
+
+        <!-- connected wallet css and html -->
+        <!-- <div class="flex items-center h-full">
           <div
             class="w-40 h-2/3 rounded-l-lg bg-gray-300 flex items-center justify-center text-black"
           >
@@ -24,7 +26,8 @@
           >
             <p>4.2034 ETH</p>
           </div>
-        </div>
+        </div> -->
+
         <img class="border h-12 w-12 rounded-lg" />
       </div>
       <img class="border h-12 w-12 rounded-lg block lg:hidden"
